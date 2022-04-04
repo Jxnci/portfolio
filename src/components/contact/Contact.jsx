@@ -8,12 +8,12 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
   const form = useRef();
 
-  function sendEmail(e){
+  function sendEmail(e) {
     e.preventDefault();
     emailjs.sendForm('service_4g7fwh7', 'template_yat480j', form.current, 'B4to2ang6Fs4v7sgf');
     e.target.reset();
   }
-  
+
   return (
     <section id='contact'>
       <h5>Get in Toush</h5>
@@ -28,12 +28,12 @@ const Contact = () => {
           <article className={styles.contact__option}>
             <RiMessengerLine className={styles.contact__option_icon} />
             <h4>Messenger</h4>
-            <a href="https:m.me/janci16" target='_blank'>Send a message</a>
+            <a href="https:m.me/janci16" rel="noreferrer">Send a message</a>
           </article>
           <article className={styles.contact__option}>
             <MdOutlineEmail className={styles.contact__option_icon} />
             <h4>WhastApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=934680481" target='_blank'>Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=934680481" rel="noreferrer">Send a message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
