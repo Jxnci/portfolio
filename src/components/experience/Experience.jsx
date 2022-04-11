@@ -15,18 +15,17 @@ const Experience = () => {
             {Tec('CSS', 'Intermediate')}
             {Tec('JavaScript', 'Experienced')}
             {Tec('Bootstrap', 'Experienced')}
-            {Tec('TailWind', 'Experienced')}
             {Tec('React', 'Experienced')}
           </div>
         </div>
         <div className={styles.experience__backend}>
           <h3>Backend Development</h3>
           <div className={styles.experience__content}>
-            {Tec('Node JS', 'Experienced')}
-            {Tec('mongoDB', 'Intermediate')}
+            {Tec('Node JS', 'Intermediate')}
+            {Tec('SQL Server', 'Intermediate')}
             {Tec('PHP', 'Experienced')}
             {Tec('MySQL', 'Experienced')}
-            {Tec('Python', 'Experienced')}
+            {Tec('Java', 'Experienced')}
           </div>
         </div>
       </div>

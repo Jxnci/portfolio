@@ -28,12 +28,12 @@ const Contact = () => {
           <article className={styles.contact__option}>
             <RiMessengerLine className={styles.contact__option_icon} />
             <h4>Messenger</h4>
-            <a href="https:m.me/janci16" rel="noreferrer">Send a message</a>
+            <a href="https:m.me/janci16" target="_blank" rel="noreferrer noopener">Send a message</a>
           </article>
           <article className={styles.contact__option}>
             <MdOutlineEmail className={styles.contact__option_icon} />
             <h4>WhastApp</h4>
-            <a href="https://api.whatsapp.com/send?phone=934680481" rel="noreferrer">Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=934680481" target="_blank" rel="noreferrer noopener">Send a message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
