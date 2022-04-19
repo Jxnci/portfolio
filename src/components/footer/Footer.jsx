@@ -17,9 +17,9 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className={styles.footer__socials}>
-        <a href="https://facebook.com/janci16" target='_blank'><FaFacebook /></a>
-        <a href="https://www.instagram.com/janci_u15/" target='_blank'><FiInstagram /></a>
-        <a href="https://twitter.com/janci_urdanivia" target='_blank'><IoLogoTwitter /></a>
+        <a href="https://facebook.com/janci16" target='_blank' rel="noreferrer noopener"><FaFacebook /></a>
+        <a href="https://www.instagram.com/janci_u15/" target='_blank' rel="noreferrer noopener"><FiInstagram /></a>
+        <a href="https://twitter.com/janci_urdanivia" target='_blank' rel="noreferrer noopener"><IoLogoTwitter /></a>
       </div>
       <div className={styles.footer__copyright}>
         <small>&copy; Janci - 2022</small>

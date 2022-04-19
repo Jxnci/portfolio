@@ -27,8 +27,8 @@ function Works(img, description) {
       </div>
       <h3>{description}</h3>
       <div className={styles.portfolio__item_cta}>
-        <a href="https://github.com/jxnci" className='btn' target='_blank'>Github</a>
-        <a href="https://dribble.com" className='btn btn-primary' target='_blank'> Demo Live</a>
+        <a href="https://github.com/jxnci" className='btn' target='_blank' rel="noreferrer noopener">Github</a>
+        <a href="https://dribble.com" className='btn btn-primary' target='_blank' rel="noreferrer noopener"> Demo Live</a>
       </div>
     </article>
   );
