@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './experience.module.css'
 
 import { BsPatchCheckFill } from 'react-icons/bs'

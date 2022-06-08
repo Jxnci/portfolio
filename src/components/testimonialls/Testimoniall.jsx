@@ -1,14 +1,18 @@
+import React from 'react';
+
 import styles from './testimonialls.module.css'
 import Avtr1 from '../../assets/client1.jpg';
 import Avtr2 from '../../assets/client2.jpg';
 import Avtr3 from '../../assets/client3.jpg';
 import Avtr4 from '../../assets/client4.jpg';
 
-import { Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
+
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
 
 
 const pa = "Lorem ipsum dolor sit amet consectetur adipisicing elit.Deserunt ut hic cupiditate. Odit maiores esse tenetur possimus fugiat deleniti,tempore explicabo soluta doloribus sed quod quo. Laborum maxime in fuga!";

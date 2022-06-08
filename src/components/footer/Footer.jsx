@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './footer.module.css'
 import { FaFacebook } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'

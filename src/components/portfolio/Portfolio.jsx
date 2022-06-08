@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './portfolio.module.css'
 import img1 from '../../assets/img.jpg'
 import img2 from '../../assets/img1.jpg'

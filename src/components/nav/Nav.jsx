@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './Nav.module.css';
 import { AiOutlineHome } from 'react-icons/ai'
 import { AiOutlineUser } from 'react-icons/ai'

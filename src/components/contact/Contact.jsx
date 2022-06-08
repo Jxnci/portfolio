@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './contact.module.css';
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine } from 'react-icons/ri'

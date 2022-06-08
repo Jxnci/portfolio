@@ -1,3 +1,5 @@
+import React from 'react';
+
 import CV from '../../assets/CV.pdf';
 import styles from './Header.module.css';
 
