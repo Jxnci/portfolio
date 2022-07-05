@@ -30,7 +30,7 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <header id='#inicio'>
       <div className={`${styles.header__container} ${'container'}`}>
         <div className={styles.header_content}>
           <div className={styles.s}>
@@ -48,12 +48,12 @@ const Header = () => {
         </div>
         <HeaderSocials />
         <div className={styles.scroll__down}>
-          <a onClick={() => setactiveColor('default')}
-            className={`${activeColor === 'default' ? active : ''} ${styles.default}`}></a>
-          <a onClick={() => setactiveColor('dark')}
-            className={`${activeColor === 'dark' ? active : ''} ${styles.dark}`}></a>
-          <a onClick={() => setactiveColor('green')}
-            className={`${activeColor === 'green' ? active : ''} ${styles.green}`}></a>
+          <button onClick={() => setactiveColor('default')}
+            className={`${activeColor === 'default' ? active : ''} ${styles.default}`}></button>
+          <button onClick={() => setactiveColor('dark')}
+            className={`${activeColor === 'dark' ? active : ''} ${styles.dark}`}></button>
+          <button onClick={() => setactiveColor('green')}
+            className={`${activeColor === 'green' ? active : ''} ${styles.green}`}></button>
         </div>
       </div>
     </header>

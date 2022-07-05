@@ -7,7 +7,7 @@ import Avtr3 from '../../assets/client3.jpg';
 import Avtr4 from '../../assets/client4.jpg';
 
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import {Pagination} from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 
@@ -37,7 +37,7 @@ const data = [
 
 const Testimoniall = () => {
   return (
-    <section id='testimonials'>
+    <section id='Testimoniall'>
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
       <Swiper className={`${styles.testimonial__container} ${styles.container}`}

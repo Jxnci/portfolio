@@ -15,9 +15,10 @@ const Nav = () => {
   let active = styles.active;
   return (
     <nav>
-      <a href="#"
-        onClick={() => setActiveNav('#')}
-        className={activeNav === '#' ? active : ''}><AiOutlineHome /></a>
+      <a href="#inicio"
+        onClick={() => setActiveNav('#inicio')}
+        className={activeNav === '#inicio' ? active : ''}>
+        <AiOutlineHome /></a>
       <a href="#about"
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? active : ''}
