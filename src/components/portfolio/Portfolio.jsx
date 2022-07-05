@@ -4,18 +4,20 @@ import styles from './portfolio.module.css'
 import img1 from '../../assets/img.jpg'
 import img2 from '../../assets/img1.jpg'
 
+import {BsBoxArrowInUpRight} from 'react-icons/bs';
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>Mis trabajos recientes</h5>
+      <h2>Portafolio</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
-        {Works(img1, 'Lorem ipsum dolor eum eveniet elit gaa!')}
-        {Works(img2, 'Lorem ipsum dolor eum eveniet elit gaa!')}
-        {Works(img1, 'Lorem ipsum dolor eum eveniet elit gaa!')}
-        {Works(img2, 'Lorem ipsum dolor eum eveniet elit gaa!')}
-        {Works(img1, 'Lorem ipsum dolor eum eveniet elit gaa!')}
-        {Works(img2, 'Lorem ipsum dolor eum eveniet elit gaa!')}
+        {Works(img1, 'Breve descripción del proyecto online.')}
+        {Works(img2, 'Breve descripción del proyecto online.')}
+        {Works(img1, 'Breve descripción del proyecto online.')}
+        {Works(img2, 'Breve descripción del proyecto online.')}
+        {Works(img1, 'Breve descripción del proyecto online.')}
+        {Works(img2, 'Breve descripción del proyecto online.')}
       </div>
     </section>
   )
@@ -30,7 +32,7 @@ function Works(img, description) {
       <h3>{description}</h3>
       <div className={styles.portfolio__item_cta}>
         <a href="https://github.com/jxnci" className='btn' target='_blank' rel="noreferrer noopener">Github</a>
-        <a href="https://dribble.com" className='btn btn-primary' target='_blank' rel="noreferrer noopener"> Demo Live</a>
+        <a href="https://dribble.com" className='btn btn-primary' target='_blank' rel="noreferrer noopener">Ver <BsBoxArrowInUpRight/></a>
       </div>
     </article>
   );

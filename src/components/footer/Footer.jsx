@@ -8,15 +8,14 @@ import { IoLogoTwitter } from 'react-icons/io'
 const Footer = () => {
   return (
     <footer>
-      <a href="#inicio" className={styles.footer_logo}>Jxnci</a>
       <ul className={styles.permalinks}>
-        <li><a href="#inicio">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#Testimoniall">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#service">Servicios</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#Testimoniall">Comentarios</a></li>
+        <li><a href="#contact">Cantacto</a></li>
       </ul>
       <div className={styles.footer__socials}>
         <a href="https://facebook.com/janci16" target='_blank' rel="noreferrer noopener"><FaFacebook /></a>

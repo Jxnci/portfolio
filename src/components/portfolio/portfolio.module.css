@@ -9,10 +9,6 @@
   border-radius: 2rem;
   transition: var(--transition);
 }
-.portfolio__item:hover {
-  border-color: var(--colorprimary-variant);
-  background: transparent;
-}
 
 .portfolio__item_image {
   border-radius: 1.5rem;

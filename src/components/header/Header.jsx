@@ -30,16 +30,16 @@ const Header = () => {
   }
 
   return (
-    <header id='#inicio'>
+    <header id='inicio'>
       <div className={`${styles.header__container} ${'container'}`}>
         <div className={styles.header_content}>
           <div className={styles.s}>
-            <h5>Hello I'm</h5>
+            <h5>Hola soy</h5>
             <h1>Janci Urdanivia</h1>
             <h5 className="text-light">Fullstack Developer</h5>
             <CTA />
             <div className={styles.header__scroll}>
-              <a href="#contact" >Scroll Down</a>
+              <a href="#contact" >Ver más</a>
             </div>
           </div>
           <div className={styles.me}>

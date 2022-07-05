@@ -9,8 +9,8 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5>Algo más</h5>
+      <h2>Sobre mí</h2>
       <div className={`${styles.about__container} ${'container'}`}>
         <div className={styles.about__me}>
           <div className={styles.about__me_image}>
@@ -21,26 +21,24 @@ const About = () => {
           <div className={styles.about__cards}>
             <article className={styles.about__card}>
               <FaAward className={styles.about__icon} />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <h5>Experiencia</h5>
+              <small>3+ Años trabajando</small>
             </article>
             <article className={styles.about__card}>
               <FiUsers className={styles.about__icon} />
-              <h5>Clients</h5>
-              <small>200+ Wolrdwide</small>
+              <h5>Clientes</h5>
+              <small>+ Por todo el mundo</small>
             </article>
             <article className={styles.about__card}>
               <VscFolderLibrary className={styles.about__icon} />
-              <h5>Projects</h5>
-              <small>80+ Complete</small>
+              <h5>Proyectos</h5>
+              <small>+ Completos</small>
             </article>
           </div>
 
           <p>
-            I feel very motivated and eager to learn more about technology. I think that completing my academic training by acquiring knowledge in digital content will help me a lot to develop my professional career in the future.
-            I have also had the opportunity to develop my first work experiences through internships in different companies and university classmates.
-          </p>
-
+            Me siento muy motivado y con muchas ganas de seguir aprendiendo más sobre tecnología.  Completar mi formación académica adquiriendo conocimientos en contenidos digitales me ayudará mucho a desarrollar mi carrera profesional en el futuro.
+            También he tenido la oportunidad de desarrollar mis primeras experiencias laborales a través de prácticas en diferentes empresas y en conjunto a compañeros universitarios. </p>
           <a href="#contact" className='btn btn-primary'> Let's Working</a>
         </div>
       </div>

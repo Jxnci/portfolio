@@ -15,31 +15,31 @@ import 'swiper/swiper.min.css'
 import 'swiper/modules/pagination/pagination.min.css'
 
 
-const pa = "Lorem ipsum dolor sit amet consectetur adipisicing elit.Deserunt ut hic cupiditate. Odit maiores esse tenetur possimus fugiat deleniti,tempore explicabo soluta doloribus sed quod quo. Laborum maxime in fuga!";
+const pa = "¡Mi sitio se ve maravilloso! Un gran paso adelante del Marco de publicidad y trabajo.";
 const data = [
   {
     avatar: Avtr1,
-    name: 'Jhon Smith',
+    name: 'Jimmy Shuan',
     review: pa
   }, {
     avatar: Avtr2,
-    name: 'Sara Smith',
+    name: 'Sara Palacios',
     review: pa
   }, {
     avatar: Avtr3,
-    name: 'Carlos Smith',
+    name: 'Carlos Montes',
     review: pa
   }, {
     avatar: Avtr4,
-    name: 'Lucia Smith',
+    name: 'Lucia Vera',
     review: pa
   }]
 
 const Testimoniall = () => {
   return (
     <section id='Testimoniall'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <h5>Revisión de los clientes</h5>
+      <h2>Comentarios</h2>
       <Swiper className={`${styles.testimonial__container} ${styles.container}`}
       // Install Swiper modules
         modules={[Pagination]}
