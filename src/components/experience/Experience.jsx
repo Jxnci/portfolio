@@ -11,22 +11,28 @@ const Experience = () => {
       <h2>Mi Experiencia</h2>
       <div className={`${styles.experience__container} ${'container'}`}>
         <div className={styles.experience__frontend}>
-          <h3>Frontend Development</h3>
+          <h3>Desarrollo front-end</h3>
           <div className={styles.experience__content}>
             {Tec('HTML', 'Experimentado')}
             {Tec('CSS', 'Experimentado')}
-            {Tec('JavaScript', 'Experimentado')}
+            {Tec('TailWind', 'Experimentado')}
             {Tec('Bootstrap', 'Experimentado')}
+            {Tec('JavaScript', 'Experimentado')}
             {Tec('React', 'Intermedio')}
+            {Tec('Vue', 'Intermedio')}
+            {Tec('jQuery', 'Experimentado')}
           </div>
         </div>
         <div className={styles.experience__backend}>
-          <h3>Backend Development</h3>
+          <h3>Desarrollo de back-end</h3>
           <div className={styles.experience__content}>
-            {Tec('Node JS', 'Básico')}
             {Tec('SQL Server', 'Intermedio')}
-            {Tec('PHP', 'Experimentado')}
             {Tec('MySQL', 'Experimentado')}
+            {Tec('NodeJS', 'Básico')}
+            {Tec('PHP', 'Experimentado')}
+            {Tec('Laravel', 'Basico')}
+            {Tec('Python', 'Intermedio')}
+            {Tec('DJango', 'Basico')}
             {Tec('Java', 'Experimentado')}
           </div>
         </div>
@@ -44,6 +50,6 @@ function Tec(name, desc) {
         <small className={'text-light'}>{desc}</small>
       </div>
     </article>
-  )
+  );
 }
 export default Experience

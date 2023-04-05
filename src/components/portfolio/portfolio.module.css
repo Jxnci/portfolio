@@ -9,7 +9,9 @@
   border-radius: 2rem;
   transition: var(--transition);
 }
-
+.portfolio__item_description{
+  color: ·#dedede;
+}
 .portfolio__item_image {
   border-radius: 1.5rem;
   overflow: hidden;

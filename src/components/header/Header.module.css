@@ -2,6 +2,7 @@ header {
   height: 100vh;
   overflow: hidden;
 }
+
 .header__container {
   text-align: center;
   height: 90%;
