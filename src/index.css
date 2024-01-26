@@ -11,19 +11,30 @@
 }
 
 :root {
-  --color-bg: #E7E4DE;
+  /* --color-bg: #E7E4DE;  Reemplazado*/
+  --color-bg: #EDEFF8;
   --color-bg-variant: #363B3E;
-  --color-primary: #BD2631;
+  --color-primary: #982028;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  /* --color-light: rgba(255, 255, 255, 0.6); Reemplazado */
+  --color-light: rgba(237, 239, 248, 0.6);
 
   --transition: all 400ms ease;
-
+  
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
-
+  
+  /* Colores adicionales */
+  --color-add-1: #9A3B39;/*C*/
+  --color-add-2: #E9EDF5;/*N*/
+  --color-add-3: #090E1B;/*C*/
+  --color-add-4: #444444;/*N*/
+  --color-add-5: #0E0C38;/*N*/
+  --color-add-6: #233445;/*N*/
+  --color-add-7: #EDEFF8;/*C*/
+  --color-add-8: #FC9545;/*C*/
 
   /* color active */
   --color-active: #138686;
@@ -31,22 +42,44 @@
   /* color dark */
   --color-dark: #192734;
   /* color green */
-  --color-green: #78866B;
+  --color-green: #6b9940;
+
+  /* Background Gradient */
+
+  --fondo:radial-gradient(ellipse at top, #222234 0%, #14141B 50%, #0A0A0A 100%);
+  --fondo-white:radial-gradient(ellipse at top, #FFFFFF 0%, #EDEFF8 50%, #E9EDF5 100%);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 8px;
 }
-body {
-  font-family: "Poppins", sans-serif;
+
+/* Track */
+::-webkit-scrollbar-track {
   background: var(--color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-add-1);
+}
+
+body {
+  font-family: 'Onest Variable',system-ui,"Poppins", sans-serif;
   color: var(--color-white);
+  background-color: var(--color-bg);
   line-height: 1.5;
-  background-size: 120px;
 }
 
 /* General styles */
@@ -67,13 +100,18 @@ h1 {
 }
 
 section {
-  margin-bottom: 6rem;
+background-image:  radial-gradient(rgba(255, 255, 255, 0.1) 1.85px, transparent 1.85px);
+background-size: 87px 87px;
+background-position: 0 0,36px 30px;
 }
 
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-light);
+  color: var(--color-primary);
+}
+section h5{
+  opacity: .8;
 }
 
 section > h2 {
@@ -87,7 +125,7 @@ section > h2 {
 
 a {
   color: var(--color-primary);
-  transition: var(--transition);
+
 }
 
 a:hover {
@@ -102,7 +140,6 @@ a:hover {
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
-  transition: var(--transition);
 }
 
 .btn:hover {

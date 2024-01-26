@@ -1,0 +1,131 @@
+/* Formateamos el label que servirá de contenedor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+ 
+/* Ocultamos el checkbox html */
+.switch input {
+  display:none;
+}
+ 
+/* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+/* Pintamos la perilla de control o slider usando el selector before */
+.slider:before {
+  position: absolute;
+  content: "🌙";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-dark);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+/* Cambiamos el color de fondo cuando el checkbox esta activado */
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+ 
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */ 
+
+input:checked + .slider:before {
+  content: "🌞";
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+ 
+/* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+.slider.round {
+  border-radius: 8px;
+}
+ 
+.slider.round:before {
+  border-radius: 8px;
+}
+
+
+:root {
+	--hue: 0;
+	--sat: 0%;
+}
+
+.btn{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.lampara{
+    top: 80px;
+    width: 300px;
+    position: relative;
+}
+.cable{
+    height: 60px;
+}
+.caja{
+    width: 80px;
+    height: 40px;
+    background-color: #626262;
+    box-shadow: 0.375em -0.25em 0.5em hsla(var(--hue),var(--sat),10%,0.5) inset;
+    margin: auto;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.luz{
+    max-width: 300px;
+    margin: auto;
+    height: 200px;
+    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%);
+    padding-top: 40px;
+}
+.l0{
+    background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,0));
+}
+
+
+
+.caja:before,
+.caja:after {
+	background-color: hsl(var(--hue),var(--sat),90%);
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 100%;
+}
+.caja:before {
+	box-shadow:
+		-0.2em -0.5em 0.75em hsla(0,0%,0%,0.6),
+		0.25em 0 0.25em hsla(var(--hue),var(--sat),10%,0.2) inset,
+		0.25em -1.25em 0.5em hsla(var(--hue),var(--sat),10%,0.5) inset;
+	left: calc(50% - 0.15em);
+	width: .2em;
+	height: 4.22em;
+}
+.caja:after {
+	border-radius: 0.25em 0.25em 0 0;
+	box-shadow: 0.375em -0.25em 0.5em hsla(var(--hue),var(--sat),10%,0.5) inset;
+	left: calc(50% - 0.35em);
+	width: .7em;
+	height: .5em;
+}
+

@@ -9,15 +9,12 @@ import { BsBoxArrowInUpRight } from 'react-icons/bs';
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>Mis trabajos recientes</h5>
-      <h2>Portafolio</h2>
+      <h5 className={styles.titulo}>Mis trabajos recientes</h5>
+      <h2>Proyectos</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
         {Works(img1, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
         {Works(img2, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
         {Works(img1, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
-        {Works(img2, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
-        {Works(img1, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
-        {Works(img2, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
       </div>
     </section>
   )

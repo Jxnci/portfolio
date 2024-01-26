@@ -3,6 +3,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+.titulo{
+  padding-top: 4rem;
+}
 
 .experience__container > div {
   background: var(--color-bg-variant);

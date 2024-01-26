@@ -1,60 +1,31 @@
 import React from 'react';
+
 import styles from './Header.module.css';
 import CTA from './Cta';
-import ME from '../../assets/me.png';
-import HeaderSocials from './HeaderSocials';
+import Boton from './Boton.jsx';
 
-import { useState } from 'react';
+import Oscuro from '../oscuro/Oscuro.jsx';
 
 const Header = () => {
-
-  const [activeColor, setactiveColor] = useState('default');
-  let active = styles.active;
-  const r = document.querySelector(':root');//cambio de color
-  document.body.style.transition = "all .3s ease-in-out";//transicion de color
-
-  if (activeColor === 'dark') {
-    document.body.style.backgroundColor = "#192734";
-    r.style.setProperty('--color-primary', '#fff');
-    r.style.setProperty('--color-bg', '#000');
-    r.style.setProperty('--color-white', '#fff');
-    document.body.style.color = "#ffffff";
-  } else if (activeColor === 'green') {
-    document.body.style.backgroundColor = "#78866B";
-    document.body.style.color = "#fff";
-  } else {
-    document.body.style.backgroundColor = "#E7E4DE";
-    r.style.setProperty('--color-primary', '#BD2631');
-    r.style.setProperty('--color-bg', '#E7E4DE');
-    r.style.setProperty('--color-white', '#fff');
-  }
 
   return (
     <header id='inicio'>
       <div className={`${styles.header__container} ${'container'}`}>
+        <div className={styles.fondo}></div>
         <div className={styles.header_content}>
-          <div className={styles.s}>
-            <h5>Hola soy</h5>
-            <h1>Janci Urdanivia</h1>
-            <h5 className="text-light">Fullstack Developer</h5>
+          <div className={styles.names}>
+            <Boton />
+            <h1>Janci Urdanivia Coral</h1>
+            <h5>+3 años de experiencia. <span> Desarrollador Web y de escritorio</span> . <span>De Ancash, Perú.</span> <span>Especializado en crear aplicaciones únicas.</span></h5>
             <CTA />
-            <div className={styles.header__scroll}>
-              <a href="#contact" >Ver más</a>
-            </div>
-          </div>
-          <div className={styles.me}>
-            <img src={ME} alt="Janci Urdanivia" />
           </div>
         </div>
-        <HeaderSocials />
         <div className={styles.scroll__down}>
-          <button onClick={() => setactiveColor('default')}
-            className={`${activeColor === 'default' ? active : ''} ${styles.default}`}></button>
-          <button onClick={() => setactiveColor('dark')}
-            className={`${activeColor === 'dark' ? active : ''} ${styles.dark}`}></button>
-          <button onClick={() => setactiveColor('green')}
-            className={`${activeColor === 'green' ? active : ''} ${styles.green}`}></button>
+          <Oscuro />
         </div>
+        <div className={styles.part1}></div>
+        <div className={styles.part2}></div>
+        <div className={styles.part3}></div>
       </div>
     </header>
   )

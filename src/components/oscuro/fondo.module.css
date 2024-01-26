@@ -1,0 +1,36 @@
+#fond {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -200;
+
+
+  background-color: #1f2937; /* bg-neutral-950 */
+  background-image: radial-gradient(ellipse at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0)); /* bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] */
+
+}
+
+.w_full {
+  width: 100%;
+}
+
+.items_center {
+  align-items: center;
+}
+
+.px_5 {
+  padding-left: 1.25rem; /* Equivalente a 5 en Tailwind */
+  padding-right: 1.25rem; /* Equivalente a 5 en Tailwind */
+}
+
+.py_24 {
+  padding: 20px auto; /* Equivalente a 24 en Tailwind */
+}
+
+/* background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%); */
+.background {
+  background: var(--fondo)
+  /* background: radial-gradient(circle, #2b2f77 0%, #141852 50%, #070b34 100%); */
+}

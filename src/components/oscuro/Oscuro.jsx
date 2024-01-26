@@ -1,0 +1,53 @@
+import React, { useState } from 'react';
+import styles from './oscuro.module.css'
+const Oscuro = () => {
+
+  const [encendida, setEncendida] = useState(false);
+
+  const r = document.querySelector(':root');//cambio de color
+  document.body.style.transition = "all .3s ease-in-out";//transicion de color
+
+  // const fondobase=
+
+
+
+  const toggleLuz = () => {
+    setEncendida((prevState) => !prevState);
+    console.log(encendida)
+    if (encendida === true) {
+      // document.body.style.backgroundColor = "#E7E4DE";
+      r.style.setProperty('--color-primary', '#BD2631');
+      r.style.setProperty('--color-bg', '#E7E4DE');
+      r.style.setProperty('--color-white', '#fff');
+      r.style.setProperty('--fondo', 'radial-gradient(ellipse at top, #FFFFFF 0%, #EDEFF8 50%, #E9EDF5 100%);');
+      document.body.style.background = "#fff";
+    } else {
+      // document.body.style.backgroundColor = "#192734";
+      r.style.setProperty('--color-primary', '#fff');
+      r.style.setProperty('--color-bg', '#000');
+      r.style.setProperty('--color-white', '#fff');
+      r.style.setProperty('--fondo-white', 'radial-gradient(ellipse at top, #222234 0%, #14141B 50%, #0A0A0A 100%)');
+      document.body.style.color = "#ffffff";
+      document.body.style.background = "#051626";
+    }
+  };
+
+  return (
+    <div>
+      <div className={styles.lampara}>
+        <div className={styles.btn}>
+          <label className={styles.switch}>
+            <input type="checkbox" checked={encendida}
+              onChange={toggleLuz} />
+            <div className={`${styles.slider} ${styles.round}`}></div>
+          </label>
+        </div>
+        <div className={styles.cable}></div>
+        <div className={styles.caja}></div>
+        <div className={encendida ? `${styles.luz} ${styles.l0}` : styles.luz}></div>
+      </div>
+    </div>
+  );
+}
+
+export default Oscuro
