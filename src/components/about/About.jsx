@@ -8,7 +8,7 @@ import { VscFolderLibrary } from 'react-icons/vsc';
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id='about' className={styles.sobre}>
       <h5>Algo más</h5>
       <h2>Sobre mí</h2>
       <div className={`${styles.about__container} ${'container'}`}>

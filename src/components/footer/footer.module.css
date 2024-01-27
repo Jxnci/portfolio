@@ -2,7 +2,7 @@ footer{
   background: var(--color-primary);
   padding: 3rem 6rem;
   text-align: center;
-  /* margin-top: 7rem; */
+  margin-top: 7rem;
   display: flex;
   justify-content: space-between;
   border-radius: 20px 20px 0 0 ;

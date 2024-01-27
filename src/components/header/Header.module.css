@@ -182,7 +182,7 @@ button.active {
   animation: rotation 100s infinite linear;
   background: rgba(4, 233, 65, 0.2);
   top: -100px;
-  left: 0px;
+  left: 50px;
 }
 .part2{
   animation: rotation 100s infinite linear;

@@ -100,9 +100,9 @@ h1 {
 }
 
 section {
-background-image:  radial-gradient(rgba(255, 255, 255, 0.1) 1.85px, transparent 1.85px);
-background-size: 87px 87px;
-background-position: 0 0,36px 30px;
+  background-image:  radial-gradient(rgba(255, 255, 255, 0.1) 1.85px, transparent 1.85px);
+  background-size: 87px 87px;
+  background-position: 0 0,36px 30px;
 }
 
 section > h2,
