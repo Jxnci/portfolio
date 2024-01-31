@@ -5,6 +5,7 @@ import img1 from '../../assets/img.jpg'
 import img2 from '../../assets/img1.jpg'
 
 import { BsBoxArrowInUpRight } from 'react-icons/bs';
+import { FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
   return (
@@ -12,25 +13,42 @@ const Portfolio = () => {
       <h5 className={styles.titulo}>Mis trabajos recientes</h5>
       <h2>Proyectos</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
-        {Works(img1, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
-        {Works(img2, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
-        {Works(img1, 'Titulo del proyecto', 'Breve descripción del proyecto online.')}
+        {Works(img1, 'CookApp', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['Laravel API', 'Tailwind','Vue','MySql'])}
+        {Works(img2, 'RTV-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind','Blade','MySql','JavaScript'])}
+        <div className={styles.portflio_boton_content}>
+          <button className={styles.portfolio__boton}>Ver mas </button>
+        </div>
+        <div className={styles.portfolio__container_content}>
+          {Works(img1, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['HTML', 'CSS','PhP','MySql','JavaScript','jQuery','Tailwind'])}
+          {Works(img1, 'Sistema POS', 'Sistema POS, con modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['HTML', 'CSS','PhP','JavaScript','MySql'])}
+        </div>
       </div>
     </section>
   )
 }
 
-function Works(img, titulo, description) {
+function Works(img, titulo, description, tecnologias) {
   return (
     <article className={styles.portfolio__item}>
       <div className={styles.portfolio__item_image}>
         <img src={img} alt="project" />
       </div>
-      <h3>{titulo}</h3>
-      <p className={styles.portfolio__item_description}>{description}</p>
-      <div className={styles.portfolio__item_cta}>
-        <a href="https://github.com/jxnci" className='btn' target='_blank' rel="noreferrer noopener">Github</a>
-        <a href="https://dribble.com" className='btn btn-primary' target='_blank' rel="noreferrer noopener">Ver <BsBoxArrowInUpRight /></a>
+      <div className={styles.portfolio__item_content}>
+        <div className={styles.portfolio__titulo}>
+          <h3>{titulo}</h3>
+          <div className={styles.portfolio__item_cta}>
+            <a href="https://github.com/jxnci" className='btn' target='_blank' rel="noreferrer noopener"><FaGithub /></a>
+            <a href="https://dribble.com" className='btn btn-primary' target='_blank' rel="noreferrer noopener">Visitar <BsBoxArrowInUpRight /></a>
+          </div>
+        </div>
+        <p className={styles.portfolio__item_description}>{description}</p>
+        <div className={styles.techs}>
+          {
+            tecnologias.map(element => (
+              <div key={element} className={styles.pastilla}>{element}</div>
+            ))
+          }
+        </div>
       </div>
     </article>
   );

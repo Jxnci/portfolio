@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './experience.module.css'
-import { FaMagic } from "react-icons/fa";
+import { FaInfoCircle } from "react-icons/fa";
 
 const Experience = () => {
 
@@ -24,7 +24,7 @@ const Experience = () => {
               <h2>Desarrollador frontend</h2>
               <h3>Fidelo - Freelancer</h3>
               <h4>Diciembre 2023 - Actualidad</h4>
-              <button className={styles.boton}><FaMagic /></button>
+              <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
               <h3>Descripcion</h3>
@@ -40,7 +40,7 @@ const Experience = () => {
               <h2>Desarrollador fullstack </h2>
               <h3>Universidad Santiago Antunez de Mayolo</h3>
               <h4>Diciembre 2023</h4>
-              <button className={styles.boton}><FaMagic /></button>
+              <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
               <h3>Descripcion</h3>
@@ -56,7 +56,7 @@ const Experience = () => {
               <h2>Desarrollador de software </h2>
               <h3>Municipalidad de Yanama - Ancash</h3>
               <h4>Noviemnbre - Diciembre 2023</h4>
-              <button className={styles.boton}><FaMagic /></button>
+              <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
               <h3>Descripcion</h3>
@@ -72,7 +72,7 @@ const Experience = () => {
               <h2>Practicante de Ing. de Sistemas</h2>
               <h3>Universidad Santiago Antunez de Mayolo</h3>
               <h4>Julio - Noviembre 2023</h4>
-              <button className={styles.boton}><FaMagic /></button>
+              <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
               <h3>Descripcion</h3>
