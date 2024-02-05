@@ -50,22 +50,6 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div className={styles.container} onClick={() => handleContainerClick('card3')}>
-          <div className={styles.card + " " + (flippedCards['card3'] ? styles.flipped : '')}>
-            <div className={styles.front}>
-              <h2>Desarrollador de software </h2>
-              <h3>Municipalidad de Yanama - Ancash</h3>
-              <h4>Noviemnbre - Diciembre 2023</h4>
-              <button className={styles.boton}><FaInfoCircle /></button>
-            </div>
-            <div className={styles.back}>
-              <h3>Descripcion</h3>
-              <p>
-                Desarrolle un sistema de consulta virtual de actas para mas de 5 mil usuarios. Utilice html, css, jquery, js y php para el desarrollo, y despliegue de l proyecto
-              </p>
-            </div>
-          </div>
-        </div>
         <div className={styles.container} onClick={() => handleContainerClick('card4')}>
           <div className={styles.card + " " + (flippedCards['card4'] ? styles.flipped : '')}>
             <div className={styles.front}>
@@ -82,33 +66,22 @@ const Experience = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className={styles.experience__frontend}>
-          <h3>Desarrollo front-end</h3>
-          <div className={styles.experience__content}>
-            {Tec('HTML', 'Experimentado')}
-            {Tec('CSS', 'Experimentado')}
-            {Tec('TailWind', 'Experimentado')}
-            {Tec('Bootstrap', 'Experimentado')}
-            {Tec('JavaScript', 'Experimentado')}
-            {Tec('React', 'Intermedio')}
-            {Tec('Vue', 'Intermedio')}
-            {Tec('jQuery', 'Experimentado')}
+        <div className={styles.container} onClick={() => handleContainerClick('card3')}>
+          <div className={styles.card + " " + (flippedCards['card3'] ? styles.flipped : '')}>
+            <div className={styles.front}>
+              <h2>Desarrollador de software </h2>
+              <h3>Municipalidad de Yanama - Ancash</h3>
+              <h4>Noviembre - Enero 2022</h4>
+              <button className={styles.boton}><FaInfoCircle /></button>
+            </div>
+            <div className={styles.back}>
+              <h3>Descripcion</h3>
+              <p>
+                Desarrolle un sistema de consulta virtual de actas para mas de 5 mil usuarios. Utilice html, css, jquery, js y php para el desarrollo, y despliegue de l proyecto
+              </p>
+            </div>
           </div>
         </div>
-        <div className={styles.experience__backend}>
-          <h3>Desarrollo de back-end</h3>
-          <div className={styles.experience__content}>
-            {Tec('SQL Server', 'Intermedio')}
-            {Tec('MySQL', 'Experimentado')}
-            {Tec('NodeJS', 'Básico')}
-            {Tec('PHP', 'Experimentado')}
-            {Tec('Laravel', 'Basico')}
-            {Tec('Python', 'Intermedio')}
-            {Tec('DJango', 'Basico')}
-            {Tec('Java', 'Experimentado')}
-          </div>
-        </div> */}
       </div>
     </section>
   )

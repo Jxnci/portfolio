@@ -10,8 +10,8 @@ const Footer = () => {
   const anio = fechaActual.getFullYear();
 
   return (
-    <footer>
-      <div className={styles.footer__copyright}>
+    <footer className={`${styles.footer__container} ${'container'}`}>
+      <div className={styles.footer__copyright }>
         <small>Hecho por Janci con ❤ - {anio}</small>
       </div>
       <div className={styles.footer__socials}>

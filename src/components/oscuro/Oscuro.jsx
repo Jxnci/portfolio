@@ -5,11 +5,7 @@ const Oscuro = () => {
   const [encendida, setEncendida] = useState(false);
 
   const r = document.querySelector(':root');//cambio de color
-  document.body.style.transition = "all .3s ease-in-out";//transicion de color
-
-  // const fondobase=
-
-
+  // document.body.style.transition = "all .3s ease-in-out";//transicion de color
 
   const toggleLuz = () => {
     setEncendida((prevState) => !prevState);
