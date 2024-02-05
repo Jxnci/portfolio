@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +9,8 @@
 }
 
 :root {
-  /* --color-bg: #E7E4DE;  Reemplazado*/
   --color-bg: #EDEFF8;
-  --color-bg-variant: #363B3E;
-  --color-primary: #982028;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-primary: #04023b;
   --color-white: #fff;
   /* --color-light: rgba(255, 255, 255, 0.6); Reemplazado */
   --color-light: rgba(237, 239, 248, 0.6);
@@ -26,26 +21,14 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
   
-  /* Colores adicionales */
-  --color-add-1: #9A3B39;/*C*/
-  --color-add-2: #E9EDF5;/*N*/
-  --color-add-3: #090E1B;/*C*/
-  --color-add-4: #444444;/*N*/
-  --color-add-5: #0E0C38;/*N*/
-  --color-add-6: #233445;/*N*/
-  --color-add-7: #EDEFF8;/*C*/
-  --color-add-8: #FC9545;/*C*/
-
   /* color active */
   --color-active: #138686;
   --color-active-variant: #DB772F;
+  --color-green: #6b9940;
   /* color dark */
   --color-dark: #192734;
-  /* color green */
-  --color-green: #6b9940;
 
   /* Background Gradient */
-
   --fondo:radial-gradient(ellipse at top, #222234 0%, #14141B 50%, #0A0A0A 100%);
   --fondo-white:radial-gradient(ellipse at top, #FFFFFF 0%, #EDEFF8 50%, #E9EDF5 100%);
 }
@@ -76,7 +59,7 @@ html {
 }
 
 body {
-  font-family: 'Onest Variable',system-ui,"Poppins", sans-serif;
+  font-family: 'Onest Variable',system-ui, sans-serif;
   color: var(--color-white);
   background-color: var(--color-bg);
   line-height: 1.5;
@@ -117,10 +100,6 @@ section h5{
 section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
-}
-
-.text-light {
-  color: var(--color-light);
 }
 
 a {

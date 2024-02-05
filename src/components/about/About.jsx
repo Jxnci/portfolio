@@ -2,9 +2,6 @@ import React from 'react';
 
 import styles from './about.module.css'
 import ME from '../../assets/janci.jpg'
-import { FaAward } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { VscFolderLibrary } from 'react-icons/vsc';
 
 const About = () => {
   return (
@@ -18,28 +15,12 @@ const About = () => {
           </div>
         </div>
         <div className={styles.about__content}>
-          <div className={styles.about__cards}>
-            <article className={styles.about__card}>
-              <FaAward className={styles.about__icon} />
-              <h5>Experiencia</h5>
-              <small>3+ Años trabajando</small>
-            </article>
-            <article className={styles.about__card}>
-              <FiUsers className={styles.about__icon} />
-              <h5>Clientes</h5>
-              <small>+ Por todo el mundo</small>
-            </article>
-            <article className={styles.about__card}>
-              <VscFolderLibrary className={styles.about__icon} />
-              <h5>Proyectos</h5>
-              <small>+ Completos</small>
-            </article>
-          </div>
-
           <p>
-            Me siento muy motivado y con muchas ganas de seguir aprendiendo más sobre tecnología.  Completar mi formación académica adquiriendo conocimientos en contenidos digitales me ayudará mucho a desarrollar mi carrera profesional en el futuro.
-            También he tenido la oportunidad de desarrollar mis primeras experiencias laborales a través de prácticas en diferentes empresas y en conjunto a compañeros universitarios. </p>
-          <a href="#contact" className='btn btn-primary'> Let's Working</a>
+            ¡Hola! Soy Janci Urdanivia. Mi viaje en la programación comenzó desde joven, <strong>explorando el mundo tecnológico con una curiosidad incesante.</strong>
+          </p><p>
+            Criado entre los hermosos paisajes de Huaraz, <strong>siempre he sentido una conexión con la naturaleza y los animales</strong>, y busco constantemente formas de fusionar este amor con mi pasión por la tecnología.
+          </p><p>
+            Graduado en Computacion e informatica, <strong>actualmente estoy cursando ingenieria de sistemas</strong>, buscando expandir mis conocimientos y habilidades en el campo. </p>
         </div>
       </div>
     </section>
