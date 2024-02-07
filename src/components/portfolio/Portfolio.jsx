@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 import styles from './portfolio.module.css'
-import img1 from '../../assets/img.jpg'
-import img2 from '../../assets/img1.jpg'
+import img1 from '../../assets/c1.png'
+import img2 from '../../assets/c2.png'
+import img3 from '../../assets/c3.png'
+import img4 from '../../assets/c4.png'
 
 import { BsBoxArrowInUpRight } from 'react-icons/bs';
 import { FaGithub } from "react-icons/fa";
@@ -22,13 +24,13 @@ const Portfolio = () => {
       <h2>Proyectos</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
         {Works(img1, 'CookApp', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['Laravel API', 'Tailwind','Vue','MySql'])}
-        {Works(img2, 'RTV-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind','Blade','MySql','JavaScript'])}
+        {Works(img2, 'NET-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind','Blade','MySql','JavaScript'])}
         <div className={styles.portflio_boton_content}>
           <button className={styles.portfolio__boton} onClick={toggleVisible}>Ver mas </button>
         </div>
         <div className={visible ? styles.portfolio__container_content : styles.portfolio__container_content__edit}>
-          {Works(img1, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind','PhP','MySql','JavaScript'])}
-          {Works(img1, 'Sistema POS', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap','JavaScript','jQuery','PhP','MySql'])}
+          {Works(img3, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind','PhP','MySql','JavaScript'])}
+          {Works(img4, 'Sistema POS', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap','JavaScript','jQuery','PhP','MySql'])}
         </div>
       </div>
     </section>
