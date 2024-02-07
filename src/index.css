@@ -9,10 +9,9 @@
 }
 
 :root {
-  --color-bg: #EDEFF8;
-  --color-primary: #04023b;
+  --color-bg: #000;
+  --color-primary: #fff;
   --color-white: #fff;
-  /* --color-light: rgba(255, 255, 255, 0.6); Reemplazado */
   --color-light: rgba(237, 239, 248, 0.6);
 
   --transition: all 400ms ease;
@@ -60,8 +59,8 @@ html {
 
 body {
   font-family: 'Onest Variable',system-ui, sans-serif;
-  color: var(--color-white);
-  background-color: var(--color-bg);
+  color: #ffffff;
+  background-color: #051626;
   line-height: 1.5;
 }
 

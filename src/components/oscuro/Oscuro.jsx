@@ -2,23 +2,19 @@ import React, { useState } from 'react';
 import styles from './oscuro.module.css'
 const Oscuro = () => {
 
-  const [encendida, setEncendida] = useState(false);
+  const [encendida, setEncendida] = useState(true);
 
   const r = document.querySelector(':root');//cambio de color
-  // document.body.style.transition = "all .3s ease-in-out";//transicion de color
 
   const toggleLuz = () => {
     setEncendida((prevState) => !prevState);
-    console.log(encendida)
     if (encendida === true) {
-      // document.body.style.backgroundColor = "#E7E4DE";
-      r.style.setProperty('--color-primary', '#BD2631');
+      r.style.setProperty('--color-primary', '#0e0c3d');
       r.style.setProperty('--color-bg', '#E7E4DE');
       r.style.setProperty('--color-white', '#fff');
       r.style.setProperty('--fondo', 'radial-gradient(ellipse at top, #FFFFFF 0%, #EDEFF8 50%, #E9EDF5 100%);');
       document.body.style.background = "#fff";
     } else {
-      // document.body.style.backgroundColor = "#192734";
       r.style.setProperty('--color-primary', '#fff');
       r.style.setProperty('--color-bg', '#000');
       r.style.setProperty('--color-white', '#fff');
