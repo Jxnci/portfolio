@@ -35,7 +35,7 @@ const Portfolio = () => {
         {Works(img1, 'CookApp', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['Laravel API', 'Tailwind','Vue','MySql'])}
         {Works(img2, 'NET-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind','Blade','MySql','JavaScript'])}
         <div className={styles.portflio_boton_content}>
-          <button className={styles.portfolio__boton} onClick={toggleVisible}>Ver mas </button>
+          <button className={styles.portfolio__boton} onClick={toggleVisible}>{visible ? "Mostrar menos" : "Mostrar mas"}</button>
         </div>
         <div className={visible ? styles.portfolio__container_content : styles.portfolio__container_content__edit}>
           {Works(img3, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind','PhP','MySql','JavaScript'])}
@@ -67,56 +67,56 @@ function Works(img, titulo, description, tecnologias) {
               if (element === 'Bootstrap') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaBootstrap /> {element}
+                    <FaBootstrap /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'JavaScript') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <BiLogoJavascript /> {element}
+                    <BiLogoJavascript /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'jQuery') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <DiJqueryLogo  /> {element}
+                    <DiJqueryLogo  /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'PhP') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <DiPhp /> {element}
+                    <DiPhp /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'MySql') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <GrMysql /> {element}
+                    <GrMysql /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'Vue') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaVuejs /> {element}
+                    <FaVuejs /><span> {element}</span>
                   </div>
                 );
               }
               if (element === 'Tailwind') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <BiLogoTailwindCss /> {element} 
+                    <BiLogoTailwindCss /><span> {element}</span> 
                   </div>
                 );
               }
               if (element === 'Laravel' || element === 'Laravel API') {
                 return (
                   <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaLaravel /> {element}
+                    <FaLaravel /><span> {element}</span>
                   </div>
                 );
               }
