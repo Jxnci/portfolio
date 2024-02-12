@@ -6,6 +6,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  /* color: darkorange; */
 }
 
 :root {
@@ -13,6 +14,7 @@
   --color-primary: #fff;
   --color-white: #fff;
   --color-light: rgba(237, 239, 248, 0.6);
+  --color-strongs: darkorange;
 
   --transition: all 400ms ease;
   
@@ -129,6 +131,10 @@ a:hover {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+strong{
+  color: var(--color-strongs);
 }
 
 img {

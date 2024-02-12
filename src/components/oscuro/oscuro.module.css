@@ -129,3 +129,24 @@ input:checked + .slider:before {
 	height: .5em;
 }
 
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 800px) {
+  .cable{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  .lampara{
+    top: 0px;
+    width: 100%;
+  }
+  .caja{
+    display: none;
+  }
+  .luz{
+    display: none;
+  }
+  .btn{
+    margin-top: 0px;
+  }
+}

@@ -16,7 +16,7 @@ const Header = () => {
           <div className={styles.names}>
             <Boton />
             <h1>Janci Urdanivia Coral</h1>
-            <h5>+3 años de experiencia. <span> Desarrollador Web y de escritorio</span> . <span>De Ancash, Perú.</span> <span>Especializado en crear aplicaciones únicas.</span></h5>
+            <h5>+3 años de experiencia. <span> Desarrollador Web y de escritorio</span> . <span>De Huaraz, Perú.</span> <span>Especializado en crear aplicaciones únicas.</span></h5>
             <CTA />
           </div>
         </div>

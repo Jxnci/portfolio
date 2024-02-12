@@ -29,7 +29,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripcion</h3>
               <p>
-                Diseño y construccion de diferentes modulos de la apliacion web en el area frontend usando VueJs, JWT, Postman
+                Diseño y construccion de diferentes modulos de la apliacion web en el area frontend usando <strong>VueJs, JWT, Postman</strong>
               </p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripcion</h3>
               <p>
-                Desarrollo e implementacion de una herramienta informatica para agilizar los tramites de la direccion de grados y titulo de la cafultad de administracion y turismo de la UNASAM.
+                Desarrollo e implementacion de una herramienta informatica para agilizar los tramites de la <strong>direccion de grados y titulos de la facultad de administracion y turismo de la UNASAM.</strong>
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripcion</h3>
               <p>
-                Implemente un portal administrable de noticias para la universidad, use el framework Laravel. Además apoye en el mantenimiento y solución de fallas de sistemas ya instalados
+                Implemente un portal administrable de noticias <strong>para la universidad, use el framework Laravel.</strong> Además apoye en el mantenimiento y solución de fallas de sistemas ya instalados
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripcion</h3>
               <p>
-                Desarrolle un sistema de consulta virtual de actas para mas de 5 mil usuarios. Utilice html, css, jquery, js y php para el desarrollo, y despliegue de l proyecto
+                Desarrolle un sistema de consulta virtual de actas para <strong>mas de 20 mil usuarios</strong>. Utilice html, css, jquery, js y php para el desarrollo, y despliegue del proyecto
               </p>
             </div>
           </div>

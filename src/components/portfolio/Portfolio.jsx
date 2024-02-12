@@ -6,6 +6,15 @@ import img2 from '../../assets/c2.png'
 import img3 from '../../assets/c3.png'
 import img4 from '../../assets/c4.png'
 
+import { FaVuejs } from "react-icons/fa";
+import { FaLaravel } from "react-icons/fa";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+import { BiLogoJavascript } from "react-icons/bi";
+import { DiPhp } from "react-icons/di";
+import { FaBootstrap } from "react-icons/fa";
+import { DiJqueryLogo } from "react-icons/di";
+
 import { BsBoxArrowInUpRight } from 'react-icons/bs';
 import { FaGithub } from "react-icons/fa";
 
@@ -54,9 +63,65 @@ function Works(img, titulo, description, tecnologias) {
         <p className={styles.portfolio__item_description}>{description}</p>
         <div className={styles.techs}>
           {
-            tecnologias.map(element => (
-              <div key={element} className={styles.pastilla}>{element}</div>
-            ))
+            tecnologias.map(element => {
+              if (element === 'Bootstrap') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <FaBootstrap /> {element}
+                  </div>
+                );
+              }
+              if (element === 'JavaScript') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <BiLogoJavascript /> {element}
+                  </div>
+                );
+              }
+              if (element === 'jQuery') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <DiJqueryLogo  /> {element}
+                  </div>
+                );
+              }
+              if (element === 'PhP') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <DiPhp /> {element}
+                  </div>
+                );
+              }
+              if (element === 'MySql') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <GrMysql /> {element}
+                  </div>
+                );
+              }
+              if (element === 'Vue') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <FaVuejs /> {element}
+                  </div>
+                );
+              }
+              if (element === 'Tailwind') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <BiLogoTailwindCss /> {element} 
+                  </div>
+                );
+              }
+              if (element === 'Laravel' || element === 'Laravel API') {
+                return (
+                  <div key={element} className={`${styles.pastilla} ${element}`}>
+                    <FaLaravel /> {element}
+                  </div>
+                );
+              }
+              return null; // Devuelve null en caso contrario
+            })
           }
         </div>
       </div>
