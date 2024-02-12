@@ -27,7 +27,7 @@ const Experience = () => {
               <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
-              <h3>Descripcion</h3>
+              <h3>Descripción</h3>
               <p>
                 Diseño y construccion de diferentes modulos de la apliacion web en el area frontend usando <strong>VueJs, JWT, Postman</strong>
               </p>
@@ -43,7 +43,7 @@ const Experience = () => {
               <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
-              <h3>Descripcion</h3>
+              <h3>Descripción</h3>
               <p>
                 Desarrollo e implementacion de una herramienta informatica para agilizar los tramites de la <strong>direccion de grados y titulos de la facultad de administracion y turismo de la UNASAM.</strong>
               </p>
@@ -59,7 +59,7 @@ const Experience = () => {
               <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
-              <h3>Descripcion</h3>
+              <h3>Descripción</h3>
               <p>
                 Implemente un portal administrable de noticias <strong>para la universidad, use el framework Laravel.</strong> Además apoye en el mantenimiento y solución de fallas de sistemas ya instalados
               </p>
@@ -75,7 +75,7 @@ const Experience = () => {
               <button className={styles.boton}><FaInfoCircle /></button>
             </div>
             <div className={styles.back}>
-              <h3>Descripcion</h3>
+              <h3>Descripción</h3>
               <p>
                 Desarrolle un sistema de consulta virtual de actas para <strong>mas de 20 mil usuarios</strong>. Utilice html, css, jquery, js y php para el desarrollo, y despliegue del proyecto
               </p>

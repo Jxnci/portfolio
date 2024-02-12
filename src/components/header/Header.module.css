@@ -29,7 +29,7 @@ header {
   align-items: center;
   margin-left: 4rem;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .header__info {
   margin: auto 4rem 0;
@@ -119,17 +119,15 @@ button.active {
   scale: 105%;
 }
 
-/* ---- ++ ---- */
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 1024px) {
-}
+
 
 /* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 800px) {
   .scroll__down {
     padding-right: 10px;
-    margin-top: 10px;
-    display: flex-end;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-right: 10px;
   }
@@ -152,7 +150,7 @@ button.active {
   .header_content {
     grid-template-columns: 1fr;
     margin: auto ;
-    padding: 0 2rem;
+    padding: 1rem 2rem 0;
     gap: 1rem;
   }
   .header__container{
