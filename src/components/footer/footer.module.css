@@ -1,12 +1,10 @@
 footer{
-
   padding: 3rem 6rem;
   text-align: center;
   display: flex;
   justify-content: space-between;
   border-radius: 20px 20px 0 0 ;
   align-items: center;
-
 
   background: rgba(255, 255, 255, 0.2);
   opacity: .7;
@@ -15,7 +13,6 @@ footer{
   -webkit-backdrop-filter: blur(10.8px);
   border: 1px solid rgba(157, 156, 156, 0.5);
   color: var(--color-primary);
-
 }
 
 .footer__container{
@@ -50,6 +47,15 @@ footer{
   }
   .footer__socials{
     margin-bottom: 1.5rem;
+  }
+  .footer__container{
+    margin: 6rem auto 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer{
+    padding-bottom: 6rem;
   }
 }
 
