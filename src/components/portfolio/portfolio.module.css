@@ -4,6 +4,56 @@
   gap: 2rem;
 }
 
+/* -.- pastillas -.- */
+
+.pastilla{
+  border-radius: 8px;
+  padding: 3px 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pastilla svg{
+  width: 16px;
+  height: 16px;
+}
+
+.pastilla span{
+  color: white;
+  padding-left: 4px;
+}
+
+.Bootstrap {
+  color: #563d7c;
+  background: #22011f;}
+.JavaScript {
+  color: #f7df1e;
+  background: #434a02;}
+.jQuery {
+  color: #0769ad;
+  background: #0d2c45;}
+.PhP {
+  color: #4F5D95;
+  background: #041a2c;}
+.MySql {
+  color: #4479a1;
+  background: #03294b;}
+.Vue {
+  color: #4fc08d;
+  background: #02490a;}
+.Tailwind {
+  color: #38b2ac;
+  background: #003159;}
+.Laravel {
+  color: #ff2d20;
+  background: #351212;}
+.LaravelAPI {
+  color: #ff2d20;
+  background: #351212;}
+/* -.- end pastillas -.- */
+
 .portfolio__item:nth-child(1){
   width: 100%;
   display: flex;
@@ -93,16 +143,9 @@
 
 .techs{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
- padding: 0 2rem 1rem 2rem;
-}
-
-.pastilla{
-  border-radius: 8px;
-  padding: 3px 8px;
-  font-size: 12px;
-  color: var(--color-bg);
-  background: gray;
+  padding: 0 2rem 1rem 2rem;
 }
 
 .portfolio__item_cta {
@@ -122,10 +165,6 @@
   height: 17px;
 }
 
-.Bootstrap{
-  background: crimson;
-}
-
 /* ---- ++ ---- */
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
@@ -140,8 +179,17 @@
   .portfolio__titulo {
     padding: 1rem 1rem 0;
   }
+  .pastilla{
+    padding: 5px;
+  }
   .pastilla span{
     display: none;
+  }
+  .techs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 1rem 1rem 1rem;
   }
 }
 

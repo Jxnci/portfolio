@@ -29,7 +29,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripción</h3>
               <p>
-                Diseño y construccion de diferentes modulos de la apliacion web en el area frontend usando <strong>VueJs, JWT, Postman</strong>
+                Diseño y construccion de diferentes modulos de la aplicacion web Fidelo en el frontend usando <strong>VueJs, JWT, Postman</strong>
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Experience = () => {
             <div className={styles.back}>
               <h3>Descripción</h3>
               <p>
-                Desarrolle un sistema de consulta virtual de actas para <strong>mas de 20 mil usuarios</strong>. Utilice html, css, jquery, js y php para el desarrollo, y despliegue del proyecto
+                Desarrolle un sistema de consulta virtual de actas para <strong>mas de 20 mil usuarios</strong>. Utilice html, css, jquery, js y php para el desarrollo y despliegue del proyecto
               </p>
             </div>
           </div>

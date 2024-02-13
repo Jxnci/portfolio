@@ -32,14 +32,14 @@ const Portfolio = () => {
       <h5 className={styles.titulo}>Mis trabajos recientes</h5>
       <h2>Proyectos</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
-        {Works(img1, 'CookApp', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['Laravel API', 'Tailwind','Vue','MySql'])}
-        {Works(img2, 'NET-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind','Blade','MySql','JavaScript'])}
+        {Works(img1, 'CookApp', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['LaravelAPI', 'Tailwind', 'Vue', 'MySql'])}
+        {Works(img2, 'NET-UNASAM', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind', 'Blade', 'MySql', 'JavaScript'])}
         <div className={styles.portflio_boton_content}>
-          <button className={styles.portfolio__boton} onClick={toggleVisible}>{visible ? "Mostrar menos" : "Mostrar mas"}</button>
+          <button className={styles.portfolio__boton} onClick={toggleVisible}>{visible ? "Ver menos" : "Ver mas"}</button>
         </div>
         <div className={visible ? styles.portfolio__container_content : styles.portfolio__container_content__edit}>
-          {Works(img3, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind','PhP','MySql','JavaScript'])}
-          {Works(img4, 'Sistema POS', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap','JavaScript','jQuery','PhP','MySql'])}
+          {Works(img3, 'FatApp', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind', 'PhP', 'MySql', 'JavaScript'])}
+          {Works(img4, 'Sistema POS', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap', 'JavaScript', 'jQuery', 'PhP', 'MySql'])}
         </div>
       </div>
     </section>
@@ -47,6 +47,19 @@ const Portfolio = () => {
 }
 
 function Works(img, titulo, description, tecnologias) {
+
+  const iconos = {
+    Bootstrap: <FaBootstrap />,
+    JavaScript: <BiLogoJavascript />,
+    jQuery: <DiJqueryLogo />,
+    PhP: <DiPhp />,
+    MySql: <GrMysql />,
+    Vue: <FaVuejs />,
+    Tailwind: <BiLogoTailwindCss />,
+    Laravel: <FaLaravel />,
+    LaravelAPI: <FaLaravel />
+  };
+
   return (
     <article className={styles.portfolio__item}>
       <div className={styles.portfolio__item_image}>
@@ -64,63 +77,16 @@ function Works(img, titulo, description, tecnologias) {
         <div className={styles.techs}>
           {
             tecnologias.map(element => {
-              if (element === 'Bootstrap') {
+              const icono = iconos[element];
+              if (icono) {
                 return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaBootstrap /><span> {element}</span>
+                  <div key={element} className={`${styles.pastilla} ${styles[element]}`}>
+                    {icono}
+                    <span> {element}</span>
                   </div>
                 );
               }
-              if (element === 'JavaScript') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <BiLogoJavascript /><span> {element}</span>
-                  </div>
-                );
-              }
-              if (element === 'jQuery') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <DiJqueryLogo  /><span> {element}</span>
-                  </div>
-                );
-              }
-              if (element === 'PhP') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <DiPhp /><span> {element}</span>
-                  </div>
-                );
-              }
-              if (element === 'MySql') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <GrMysql /><span> {element}</span>
-                  </div>
-                );
-              }
-              if (element === 'Vue') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaVuejs /><span> {element}</span>
-                  </div>
-                );
-              }
-              if (element === 'Tailwind') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <BiLogoTailwindCss /><span> {element}</span> 
-                  </div>
-                );
-              }
-              if (element === 'Laravel' || element === 'Laravel API') {
-                return (
-                  <div key={element} className={`${styles.pastilla} ${element}`}>
-                    <FaLaravel /><span> {element}</span>
-                  </div>
-                );
-              }
-              return null; // Devuelve null en caso contrario
+              return null;
             })
           }
         </div>
