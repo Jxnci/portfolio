@@ -16,7 +16,7 @@ const CTA = () => {
       <a href="https://github.com/Jxnci" target='_blank' rel="noreferrer noopener" className={styles.refs}>
         <FaGithub /><span>Github</span>
       </a>
-      <a href={CV}  className={styles.refs} target='_blank' rel="noreferrer noopener"><FaRegFileAlt /><span>CV</span></a>
+      <a href={CV}  className={styles.refs} download><FaRegFileAlt /><span>CV</span></a>
     </div>
   ) 
 }
