@@ -32,21 +32,21 @@ const Portfolio = () => {
       <h5 className={styles.titulo}>Mis trabajos recientes</h5>
       <h2>Proyectos</h2>
       <div className={`${styles.portfolio__container} ${'container'}`}>
-        {Works(img1, 'CookApp','https://flours.vercel.app', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['LaravelAPI', 'Tailwind', 'Vue', 'MySql'])}
-        {Works(img2, 'NET-UNASAM','https://rtv.unasam.edu.pe/inicio', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind', 'Blade', 'MySql', 'JavaScript'])}
+        {Works(img1, 'CookApp','https://flours.vercel.app', 'Sistema web para administrar la finanzas de emprendedores, con una API REST como backend.', ['LaravelAPI', 'Tailwind', 'Vue', 'MySql'],'https://github.com/Jxnci/flours')}
+        {Works(img2, 'NET-UNASAM','https://rtv.unasam.edu.pe/inicio', 'Sistema Administrable e informativa, para el area de Noticias de la UNASAM.', ['Laravel', 'Tailwind', 'Blade', 'MySql', 'JavaScript'],'https://github.com/Jxnci')}
         <div className={styles.portflio_boton_content}>
           <button className={styles.portfolio__boton} onClick={toggleVisible}>{visible ? "Ver menos" : "Ver mas"}</button>
         </div>
         <div className={visible ? styles.portfolio__container_content : styles.portfolio__container_content__edit}>
-          {Works(img3, 'FatApp','https://github.com/Jxnci', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind', 'PhP', 'MySql', 'JavaScript'])}
-          {Works(img4, 'Sistema POS','https://github.com/Jxnci', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap', 'JavaScript', 'jQuery', 'PhP', 'MySql'])}
+          {Works(img3, 'FatApp','https://github.com/Jxnci', 'Sistema web para realizar seguimiento de egresados de la facultad de Administracion y Turismo - UNASAM.', ['Tailwind', 'PhP', 'MySql', 'JavaScript'],'https://github.com/Jxnci')}
+          {Works(img4, 'Sistema POS','https://github.com/Jxnci', 'Contiene modulos de administracion de empleados, gestion de Ventas, cajas, Menus, Reportes, Control de asistencia, etc..', ['Bootstrap', 'JavaScript', 'jQuery', 'PhP', 'MySql'],'https://github.com/Jxnci')}
         </div>
       </div>
     </section>
   )
 }
 
-function Works(img, titulo,link, description, tecnologias) {
+function Works(img, titulo,link, description, tecnologias,linkGitHub) {
 
   const iconos = {
     Bootstrap: <FaBootstrap />,
@@ -69,7 +69,7 @@ function Works(img, titulo,link, description, tecnologias) {
         <div className={styles.portfolio__titulo}>
           <h3>{titulo}</h3>
           <div className={styles.portfolio__item_cta}>
-            <a href="https://github.com/jxnci" className='btn' target='_blank' rel="noreferrer noopener"><FaGithub /></a>
+            <a href={linkGitHub} className='btn' target='_blank' rel="noreferrer noopener"><FaGithub /></a>
             <a href={link} className='btn btn-primary' target='_blank' rel="noreferrer noopener">Visitar <BsBoxArrowInUpRight /></a>
           </div>
         </div>
